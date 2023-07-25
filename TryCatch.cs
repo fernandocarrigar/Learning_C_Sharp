@@ -5,12 +5,17 @@ namespace MyApplication
 {
     class Program
     {
-        static void Main()
+        public int[] myNumbers = { 1, 2, 3 };
+
+        //public int[] MyNumbers{ get; set;} 
+
+        public Program() { }
+
+        public static void ArryTry(int[] numbrs)
         {
             try
             {
-                int[] myNumbers = { 1, 2, 3 };
-                    Console.WriteLine(myNumbers[10]);
+                Console.WriteLine(numbrs[10]);
             }
             catch (Exception f)
             {
@@ -18,8 +23,15 @@ namespace MyApplication
             }
             finally
             {
+                Console.WriteLine(numbrs[2]);
                 Console.WriteLine("Trata de modificar el codigo");
             }
         }
+
+        //public static void Main()
+        //{
+        //    Program c = new Program();
+        //    ArryTry(c.myNumbers);
+        //}
     }
 }

@@ -11,20 +11,20 @@ namespace StringPrub
 
         public Prub()
         {
-            _ = new int[3, 4, 5];
+            //_ = new int[3, 4, 5];
         }
 
-        public void MethodRead()
+        public void MethodRead(int[,] arry)
         {
 
-            for (int i = 0; i < NewArr.GetLength(0); i++)           //Esta bloque de codigo sirve para insertar datos de manera automatica en un array multidimensional
+            for (int i = 0; i < arry.GetLength(0); i++)           //Esta bloque de codigo sirve para insertar datos de manera automatica en un array multidimensional
             {
                 Console.Write("{");
 
-                for (int j = 0; j < NewArr.GetLength(1); j++)
+                for (int j = 0; j < arry.GetLength(1); j++)
                 {
 
-                    Console.Write($"{{{NewArr[i, j]}}}");
+                    Console.Write($"{{{arry[i,j]}}}");
 
                 }
 
@@ -52,13 +52,13 @@ namespace StringPrub
         }
     }
 
-    //    class Final
-    //    {
-    //        static void Main()
-    //        {
-    //            var myObj = new Ciclo();
-    //            myObj.MethodFor(myObj.NewArr);
-    //            myObj.MethodRead();
-    //        }
-    //    }
+    class Final
+    {
+        static void Main()
+        {
+            var myObj = new Ciclo();
+            myObj.MethodFor(myObj.NewArr);
+            myObj.MethodRead(myObj.NewArr);
+        }
+    }
 }

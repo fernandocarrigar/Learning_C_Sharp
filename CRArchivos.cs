@@ -10,8 +10,8 @@ namespace StringPrub
     public class DataArchivo
     {
 
-        private string text = "Este es el contenido del archivo";
-        public string nameArc = "Archivo creado.pdf";
+        private string text = "Este es el contenido del archivo completo";
+        public string nameArc = "Archivo creado.txt";
 
         public string Text
         {
@@ -44,25 +44,25 @@ namespace StringPrub
 
     }
 
-    //class RArchivo
-    //{
-    //    static void Main()
-    //    {
-    //        var myObj = new CArchivo();
-    //        var nomArc = myObj.CreadorArchivos();
+    class RArchivo
+    {
+        //static void Main()
+        //{
+        //    var myObj = new CArchivo();
+        //    var nomArc = myObj.CreadorArchivos();
 
-    //        if(nomArc == myObj.nameArc )
-    //        {
-    //            string reading = File.ReadAllText(nomArc);
-    //            Console.WriteLine(reading);
-    //            Console.WriteLine(nomArc);
-    //        }
-    //        else
-    //        {
-    //            Console.WriteLine(nomArc);
-    //        }
+        //    if (nomArc == myObj.nameArc)
+        //    {
+        //        string reading = File.ReadAllText(nomArc);
+        //        Console.WriteLine(reading);
+        //        Console.WriteLine(nomArc);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(nomArc);
+        //    }
 
-    //    }
-    //}
+        //}
+    }
 
 }
